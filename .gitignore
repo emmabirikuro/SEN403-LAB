@@ -1,0 +1,13 @@
+RetDec-v5.0-Linux-Release.tar.xz
+CHANGELOG.md
+LICENSE
+LICENSE-PELIB
+LICENSE-THIRD-PARTY
+SECURITY.md
+bin/
+include/
+lib/
+share/
+*.bc
+*.config.json
+*.ll

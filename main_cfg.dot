@@ -1,0 +1,18 @@
+digraph MainControlFlow {
+    rankdir=TB;
+    node [shape=box, style="rounded", fontname="Arial"];
+
+    A [label="START\nInitialize sum = 0\nInitialize i = 1"];
+    B [label="LOOP CONDITION\nIs i <= 100?"];
+    C [label="LOOP BODY\nsum = sum + i\ni = i + 1"];
+    D [label="CALCULATE AVERAGE\naverage = sum / 100"];
+    E [label="DISPLAY RESULTS\nPrint sum\nPrint average"];
+    F [label="RETURN 0\nEND"];
+
+    A -> B;
+    B -> C [label="YES"];
+    C -> B;
+    B -> D [label="NO"];
+    D -> E;
+    E -> F;
+}
